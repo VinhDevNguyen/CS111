@@ -1,5 +1,6 @@
-def Multiple(X, Z=0):
-    Y = 0 # Clear Y
+def Multiple(X): 
+    Z = 0 # clear Z
+    Y = 0 # clear Y
     temp = 0 # Clear temp
     # Y = X
     while X != 0: # while X not 0 do
