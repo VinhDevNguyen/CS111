@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-void main()
+int main()
 {
 	int z = 0; //clear x
 	int y = 0; //clear y
@@ -13,7 +13,7 @@ void main()
 		while (x != 0) //while x not 0 do
 		{
 			temp = temp + 1; //incr temp
-			x = x - 1; //decr temp
+			x = x - 1; //decr x
 		}//end
 		while (temp != 0) //while temp not 0 do
 		{
