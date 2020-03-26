@@ -1,24 +1,25 @@
 def Multiple(X, Z=0):
-    Y = 0
-    temp = 0
-    while X != 0:
-        Y += 1
-        temp += 1
-        X -= 1
-    while temp != 0:
-        X += 1
-        temp -= 1
-
-    while X != 0:
-        W = 0
-        while Y != 0:
-            Z += 1
-            W += 1
-            Y -= 1
-        while W != 0:
-            Y += 1
-            W -= 1
-        X -= 1
+    Y = 0 # Clear Y
+    temp = 0 # Clear temp
+    # Y = X
+    while X != 0: # while X not 0 do
+        Y += 1 # incr Y
+        temp += 1 # incr temp
+        X -= 1 # decr X
+    while temp != 0: # while temp not 0 do
+        X += 1 # incr X
+        temp -= 1 # decr temp
+    # Z = X * Y
+    while X != 0: # while X not 0 do
+        W = 0 # clear W
+        while Y != 0: # while Y not 0 do
+            Z += 1 # incr Z
+            W += 1 # incr W
+            Y -= 1 # decr Y
+        while W != 0: # while W not 0 do
+            Y += 1 # incr Y
+            W -= 1 # decr W
+        X -= 1 # decr X
     return Z
 
 def main():
