@@ -1,0 +1,73 @@
+BT1:
+def Multiple(X): 
+    Z = 0 # clear Z;
+    Y = 0 # clear Y;
+    temp = 0 # Clear temp;
+    # (Y = X)
+    while X != 0: # while X not 0 do
+        Y += 1 # incr Y;
+        temp += 1 # incr temp;
+        X -= 1 # decr X;
+    # end;
+    while temp != 0: # while temp not 0 do
+        X += 1 # incr X;
+        temp -= 1 # decr temp;
+    # end;
+    # (Z = X * Y)
+    while X != 0: # while X not 0 do
+        W = 0 # clear W;
+        while Y != 0: # while Y not 0 do
+            Z += 1 # incr Z;
+            W += 1 # incr W;
+            Y -= 1 # decr Y;
+        # end;
+        while W != 0: # while W not 0 do
+            Y += 1 # incr Y;
+            W -= 1 # decr W;
+        # end;
+        X -= 1 # decr X;
+    # end;
+    return Z
+print(Multiple(5)) # = 25
+BT2:
+def BT2(X):
+    temp = 0 # clear temp;
+    Z = 0 # clear Z;
+    while X != 0: # while X not 0 do
+        temp += 1 # clear temo;
+        C = 0 # clear C;
+        # (Z = Z + temp)
+        while temp != 0: # while temp not 0 do
+            Z += 1 # incr Z;
+            C += 1 # icre C;
+            temp -= 1 # decr temp;
+        # end;
+        while C != 0: # while C not 0 do 
+            temp += 1 # incr temp;
+            C -= 1 # decr C;
+        # end;
+        X -= 1 # decr X;
+    # end;
+    return Z
+print(BT2(5)) # = 15
+
+BT3:
+# X % Y
+# => Z = X - (Y * (X / Y))
+
+# Sử dụng phép chia nguyên trong slide để tính (X / Y) sau đó gán vào A
+A = def PhepChia(X,Y)
+
+# Sử dụng phép nhân để tính (Y * (X / Y)) sau đó lưu vào B
+B = def PhepNhan(Y,A)
+
+# Sywr dụng phép trừ tính X - (Y * (X / Y)) sau đó gán vào biến Z
+Z = def PhepTru(X,B)
+
+BT4:
+# Sử dụng phép chia lấy dư ở bài 3 để làm cho bài này
+# lấy X % 2 và lưu kết quả vào Du
+while Du not 0 do:
+    incr Z;
+    decr du;
+end; 
