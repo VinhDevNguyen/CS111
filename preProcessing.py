@@ -47,7 +47,7 @@ def fillValueOnly(listOfValue,myDict):
     for value in listOfValue: 
         hashValue = hashlib.md5(value.encode()).hexdigest()[:3:]
         #TODO: Add try catch here to prevent error
-        myDict[hashValue].append(value) 
+        myDict[hashValue].append(value.rstrip("\n")) 
     return myDict
 myDict = {}
 myDict = fillKeyOnly(hashList,myDict)
@@ -56,7 +56,7 @@ myDict = fillValueOnly(rawFileInput,myDict)
 # Export to dictionary to *.json
 # 'dictionary.json' MUST EXISTED
 with open('dictionary.json','w',encoding= 'utf-8') as dictJson: 
-    json.dump(myDict,dictJson, ensure_ascii= False)
+    json.dump(myDict,dictJson, ensure_ascii = False, indent = None)
 del hashList
 
 
